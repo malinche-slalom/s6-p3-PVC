@@ -11,21 +11,21 @@ The client engineers currently use manual processes to move code from their loca
 
 ## Deliverables
 
-1. **Code Repository**:
+1. **Code Repository** :
     1. All working code needed to support the development and setup of a CI/CD pipeline
     2. Technical documentation that can be referenced by the client to onboard their developers
-2. **Backlog**:  Prioritized backlog with defined  stories at a level of detail that can be estimated efficiently.
-3. **Cloud Infrastructure**: All infrastructure depicted in the previous sprints' architecture diagram is provisioned in an AWS account and client is provided a URL to the deployed application. 
-4. **Presentation**: Final presentation to client stakeholders to review deliverables, demo application, and answer any outstanding questions.
+2. **Backlog** :  Prioritized backlog with defined  stories at a level of detail that can be estimated efficiently.
+3. **Cloud Infrastructure** : All infrastructure depicted in the previous sprints' architecture diagram is provisioned in an AWS account and client is provided a URL to the deployed application. 
+4. **Presentation** : Final presentation to client stakeholders to review deliverables, demo application, and answer any outstanding questions.
 Requirements
 
 ## Tools:
 
-**Jira**
+**Jira**:
 For agile project management, you will use Jira. This sprint your pod is responsible for creating the user stories needed to complete the desired solution.  See the provided How To – Jira Project Management guide in the Project Management section of the Teams knowledge management folder for more information on how to set this up. 
 
-**GitHub / Git** 
+**GitHub / Git** :
 You can use GitHub for version control for your code. Once you’re logged in to GitHub, you can create a new repository for your pod. 
 
-**Visual Studio Code**
+**Visual Studio Code** :
 We encourage you to use Visual Studio Code as the IDE for this sprint.
