@@ -17,4 +17,4 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - /api/target/api-0.0.1-SNAPSHOT.war
+    - api/target/api-0.0.1-SNAPSHOT.war
