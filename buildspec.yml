@@ -14,8 +14,7 @@ phases:
       - mvn install
   post_build:
     commands:
-      - cd api
-      - zip –r api-0.0.1-SNAPSHOT.war.zip target/api-0.0.1-SNAPSHOT.war appspec.yml scripts
+      - zip api-0.0.1-SNAPSHOT.war.zip target/api-0.0.1-SNAPSHOT.war appspec.yml scripts/preinstall.sh scripts/start.sh
 artifacts:
   files:
     - api/api-0.0.1-SNAPSHOT.war.zip
