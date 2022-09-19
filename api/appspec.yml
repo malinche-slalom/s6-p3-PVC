@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /api-0.0.1-SNAPSHOT.war
+  - source: /target/api-0.0.1-SNAPSHOT.war
     destination: /usr/share/tomcat/webapps
 hooks:
   BeforeInstall:
