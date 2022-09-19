@@ -14,7 +14,7 @@ phases:
       - mvn install
   post_build:
     commands:
-      - echo Build completed on `date`
+      - zip –r api-0.0.1-SNAPSHOT.war.zip target/api-0.0.1-SNAPSHOT.war appspec.yaml scripts
 artifacts:
   files:
-    - api/target/api-0.0.1-SNAPSHOT.war
+    - api/api-0.0.1-SNAPSHOT.war.zip
