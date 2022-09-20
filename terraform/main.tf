@@ -27,3 +27,9 @@ module "autoscaling_group" {
 
   launch_config = module.launch_configuration.launch_config
 }
+
+module "jenkins_server" {
+  source = "./modules/jenkins-server"
+
+  security_groups = ["${module.security_group.sg_name}"]
+}
