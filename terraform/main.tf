@@ -62,3 +62,7 @@ module "autoscaling_group" {
 #   security_groups = ["${module.security_group.sg_name}"]
 #   iam_role = module.jenkins_server_role.name
 # }
+
+module "artifact_bucket" {
+  source = "./modules/s3"
+}
