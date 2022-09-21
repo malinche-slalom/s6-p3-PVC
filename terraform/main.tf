@@ -22,9 +22,9 @@ module "security_group" {
   vpc_id = module.vpc.vpc_id
 }
 
-# module "jenkins_server_role" {
-#   source = "./modules/iam/jenkins-server"
-# }
+module "jenkins_server_role" {
+  source = "./modules/iam/jenkins-server"
+}
 
 module "web_server_role" {
   source = "./modules/iam/web-server"
@@ -56,12 +56,14 @@ module "autoscaling_group" {
   subnet_2 = module.vpc.subnet_2_id
 }
 
-# module "jenkins_server" {
-#   source = "./modules/jenkins-server"
+module "jenkins_server" {
+  source = "./modules/jenkins-server"
 
-#   security_groups = ["${module.security_group.sg_name}"]
-#   iam_role = module.jenkins_server_role.name
-# }
+  security_groups = ["${module.security_group.sg_id}"]
+  subnet_1 = module.vpc.subnet_1_id
+  subnet_2 = module.vpc.subnet_2_id
+  iam_role = module.jenkins_server_role.name
+}
 
 module "artifact_bucket" {
   source = "./modules/artifacts"
