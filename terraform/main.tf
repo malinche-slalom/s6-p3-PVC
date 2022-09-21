@@ -20,17 +20,22 @@ module "jenkins_server_role" {
   source = "./modules/iam/jenkins-server"
 }
 
-# module "launch_configuration" {
-#   source = "./modules/launch-config"
+module "web_server_role" {
+  source = "./modules/iam/web-server"
+}
 
-#   security_groups = ["${module.security_group.sg_name}"]
-# }
+module "launch_configuration" {
+  source = "./modules/launch-config"
 
-# module "autoscaling_group" {
-#   source = "./modules/asg"
+  security_groups = ["${module.security_group.sg_name}"]
+  iam_role = module.web_server_role.name
+}
 
-#   launch_config = module.launch_configuration.launch_config
-# }
+module "autoscaling_group" {
+  source = "./modules/asg"
+
+  launch_config = module.launch_configuration.launch_config
+}
 
 module "jenkins_server" {
   source = "./modules/jenkins-server"
