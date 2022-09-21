@@ -64,5 +64,5 @@ module "autoscaling_group" {
 # }
 
 module "artifact_bucket" {
-  source = "./modules/s3"
+  source = "./modules/artifacts"
 }
