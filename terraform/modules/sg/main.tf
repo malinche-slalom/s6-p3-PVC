@@ -1,6 +1,7 @@
 resource "aws_security_group" "ec2_sg" {
-  name        = "sprint6-pvc-sg-tf"
+  name        = "sprint6-cr-pvc-sg-tf"
   description = "Allow inbound traffic for EC2"
+  vpc_id = var.vpc_id
 
   ingress {
     description      = "SSH Access"
