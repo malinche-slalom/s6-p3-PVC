@@ -5,8 +5,6 @@
 
 ## Project Overview and Objectives
 
-Testing our pipeline.
-
 A client, a small travel agency,  recently contracted Slalom to deploy a proof-of-concept Java API to AWS to determine the feasibility of leveraging the Cloud for their IT operations. The client has since agreed to move forward with migrating their entire on-premises data center to AWS. 
 
 The client engineers currently use manual processes to move code from their local development environment to their on-premises production servers. They have raised concerns that their manual processes are time-consuming and prone to human error. Additionally, the development teams have recently adopted the Agile methodology, requiring them to deploy code more frequently. The client is looking for a Slalom team to architect, develop and deploy a modern CI/CD pipeline prior to the client undergoing their large scale migration effort. The client is excited about adding automation to the build, test, and deploy stages of the release process. The CI/CD pipeline will mitigate the risks involved in releasing software to production. 
